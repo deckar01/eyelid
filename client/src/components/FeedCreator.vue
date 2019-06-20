@@ -252,8 +252,8 @@ export default {
         const feed = {
           name: this.name,
           url: this.url,
-          start_date: `${this.startDate} ${this.startTime}`,
-          end_date: `${this.endDate || this.startDate} ${this.endTime}`,
+          start_date: new Date(`${this.startDate} ${this.startTime}`).toISOString(),
+          end_date: new Date(`${this.endDate || this.startDate} ${this.endTime}`).toISOString(),
           frames: this.frames,
           frequency: this.frequency,
           framerate: this.frameRate,
