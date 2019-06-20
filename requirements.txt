@@ -2,3 +2,4 @@ flask-appbuilder
 apscheduler
 python-slugify
 opencv-contrib-python
+flask-cors
